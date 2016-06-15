@@ -69,8 +69,22 @@ section.fun p:nth-child(6) {
   font-weight: 900;
 }
 
-section.lineup {
+p.lineup__header {
   color: #e2b59f;
+}
+section.lineup {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: stretch;
+}
+section.lineup .photo {
+  width: 300px;
+  height: 300px;
+  background-blend-mode: overlay;
+  background-size: cover;
+  -webkit-clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+  clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+  margin: 20px auto;
 }
 
 .yay {
